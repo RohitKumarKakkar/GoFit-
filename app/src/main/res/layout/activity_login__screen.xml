@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFEFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:src="@drawable/gofitlogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivlogin"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GoFit+"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_below="@id/ivlogin"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edtmail"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400sp"
+        android:background="@drawable/edt_roun"
+        android:drawableLeft="@drawable/ic_supervisor_account_black_24dp"
+        android:drawablePadding="20dp"
+        android:hint="Enter Email"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edt_roun"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="20dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:foregroundTint="@color/colorAccent"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:layout_below="@id/edtpass"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/frgtPass"
+        android:textColor="#0004FF"/>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frgtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/btn_round"
+        android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F8F8F7"/>
+
+
+</RelativeLayout>
